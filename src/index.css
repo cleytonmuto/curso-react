@@ -16,20 +16,20 @@ div {
 
 h1 {
     color: #333;
-    font-size: 2em;
-    padding: 1rem;
+    font-size: 2.5em;
+    padding: 0.5rem;
 }
 
-h2 {
+h2, h3 {
     color: #444;
-    font-size: 1.75em;
-    padding: 1rem;
+    font-size: 2em;
+    padding: 0.5rem;
 }
 
 p {
-    background-color: #999;
-    padding: 0.5rem;
+    background-color: #AAA;
     font-size: 1.5em;
+    padding: 0.5rem;
 }
 
 button {
