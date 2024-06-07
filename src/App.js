@@ -1,15 +1,12 @@
+import React from 'react';
+import Accordion from './components/Accordion';
 import './App.css';
-import OutraLista from './components/OutraLista';
 
 function App() {
-
-  const meusItens = ['React', 'Vue', 'Angular'];
-
   return (
     <div className="App">
-      <h1>Renderização de Listas</h1>
-      <OutraLista itens={meusItens} />
-      <OutraLista itens={[]} />
+      <h1>Exemplo de State Lift</h1>
+      <Accordion />
     </div>
   );
 }
