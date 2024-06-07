@@ -1,14 +1,13 @@
-import {useState, React} from 'react';
+import {React} from 'react';
 
-const Panel = ({title, children}) => {
-  const [isActive, setIsActive] = useState(false);
+const Panel = ({title, children, isActive, onShow}) => {
   return (
     <section className="panel">
       <h3>{title}</h3>
       {isActive ? (
         <p>{children}</p>
       ) : (
-        <button onClick={() => setIsActive(true)}>Show</button>
+        <button onClick={onShow}>Show</button>
       )}
     </section>
   );
