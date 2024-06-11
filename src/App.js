@@ -1,13 +1,24 @@
 import React from 'react';
-import Accordion from './components/Accordion';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Home from './pages/Home';
+import Empresa from './pages/Empresa';
+import Contato from './pages/Contato';
+import Navbar from './components/layout/Navbar';
+import Footer from './components/layout/Footer';
+
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <h1>Exemplo de State Lift</h1>
-      <Accordion />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path='/' element={<Home />} />
+        <Route path='/empresa' element={<Empresa />} />
+        <Route path='/contato' element={<Contato />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
