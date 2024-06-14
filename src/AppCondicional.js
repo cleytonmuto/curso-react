@@ -10,4 +10,4 @@ function AppCondicional() {
   );
 }
 
-export default App;
+export default AppCondicional;

@@ -3,7 +3,7 @@ import './App.css';
 import SeuNome from './components/SeuNome';
 import Saudacao from './components/Saudacao';
 
-function App() {
+function AppStateLift() {
   const [nome, setNome] = useState('');
   return (
     <div className="App">
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppStateLift;

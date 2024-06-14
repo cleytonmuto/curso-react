@@ -1,7 +1,7 @@
 import './App.css';
 import OutraLista from './components/OutraLista';
 
-function App() {
+function AppLista() {
 
   const meusItens = ['React', 'Vue', 'Angular'];
 
@@ -14,4 +14,4 @@ function App() {
   );
 }
 
-export default App;
+export default AppLista;
